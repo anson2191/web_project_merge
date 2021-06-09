@@ -24,6 +24,9 @@ import Login from '@/views/Login.vue'
 import Press2 from '@/views/Press.vue'
 import PressResult from '@/views/PressResult.vue'
 
+/* 新增 0609 Others*/
+import Others from '@/views/Others.vue'
+
 Vue.use(Router)
 
 export default new Router({
