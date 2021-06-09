@@ -122,5 +122,10 @@ export default new Router({
       name: 'PressResult',
       component: PressResult
     },
+    {
+      path: '/Others',
+      name: 'Others',
+      component: Others
+    },
   ]
 })
