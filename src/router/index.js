@@ -24,8 +24,9 @@ import Login from '@/views/Login.vue'
 import Press2 from '@/views/Press.vue'
 import PressResult from '@/views/PressResult.vue'
 
-/* 新增 0609 Others*/
+/* 新增 0609 anson*/
 import Others from '@/views/Others.vue'
+import Relax from '@/views/Relax.vue'
 
 Vue.use(Router)
 
@@ -127,5 +128,10 @@ export default new Router({
       name: 'Others',
       component: Others
     },
+    {
+      path: '/Others/Relax',
+      name: 'Relax',
+      component: Relax
+    }
   ]
 })
