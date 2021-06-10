@@ -27,6 +27,7 @@ import PressResult from '@/views/PressResult.vue'
 /* 新增 0609 anson*/
 import Others from '@/views/Others.vue'
 import Relax from '@/views/Relax.vue'
+import Medical from '@/views/Medical.vue'
 
 Vue.use(Router)
 
@@ -132,6 +133,11 @@ export default new Router({
       path: '/Others/Relax',
       name: 'Relax',
       component: Relax
-    }
+    },
+    {
+      path: '/Others/Medical',
+      name: 'Medical',
+      component: Medical
+    },
   ]
 })
