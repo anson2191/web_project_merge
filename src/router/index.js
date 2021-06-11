@@ -28,6 +28,7 @@ import PressResult from '@/views/PressResult.vue'
 import Others from '@/views/Others.vue'
 import Relax from '@/views/Relax.vue'
 import Medical from '@/views/Medical.vue'
+import Support from '@/views/Support.vue'
 
 Vue.use(Router)
 
@@ -138,6 +139,11 @@ export default new Router({
       path: '/Others/Medical',
       name: 'Medical',
       component: Medical
+    },
+    {
+      path: '/Others/Support',
+      name: 'Support',
+      component: Support
     },
   ]
 })

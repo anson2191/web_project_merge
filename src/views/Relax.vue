@@ -68,10 +68,10 @@
     position: relative;
     width: 100vw;
     height: 0;
-    top: 0.123vh;
 
     /*border: 0.2vh solid #A3FECC;*/
-    border: 0.123vh solid rgba(163, 254, 204, 1)
+    border: 0.0123vh solid rgba(163, 254, 204, 1);
+    background: #A3FECC;
 }
 .content{
     width: 100vw;

@@ -3,69 +3,54 @@
         <Nav showBackArrow=true showText=true navText="醫療院所"></Nav>
         <div id="navbar">
             <div @click="ShowLeft=true" :class="{'press':ShowLeft, 'nonpress':!ShowLeft}">
-                <div :class="{'show':ShowLeft, 'nonshow':!ShowLeft}">心理諮商</div>
+                <div :class="{'show':ShowLeft, 'nonshow':!ShowLeft}">電話專線</div>
             </div>
             <div @click="ShowLeft=false" :class="{'press':!ShowLeft, 'nonpress':ShowLeft}">
-                <div :class="{'show':!ShowLeft, 'nonshow':ShowLeft}">精神醫療</div>
+                <div :class="{'show':!ShowLeft, 'nonshow':ShowLeft}">心輔網站</div>
             </div>
         </div>
         <div class="divide_bar"/>
 
         <div v-if="ShowLeft">
-            <div class="content" @click="openLink('https://health.tainan.gov.tw/page.asp?mainid={591C736A-19E9-453C-9CD6-DCF3E70AD417}')">
+            <div class="content" @click="openLink(resource.phone[0].link)">
                 <div class="font_box">
-                    <div class="title1">台南市衛生局 - 免費諮商服務</div>
-                    <div class="title2">各區衛生所</div>
+                    <div class="title1" v-text="resource.phone[0].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('http://www.natureiswell.com.tw/')">
+            <div class="content" @click="openLink(resource.phone[1].link)">
                 <div class="font_box">
-                    <div class="title1">自然就好心理諮商所</div>
-                    <div class="title2">臺南市東區慶東街214號1樓</div>
+                    <div class="title1" v-text="resource.phone[1].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('https://www.kxmind.com/')">
+            <div class="content" @click="openLink(resource.phone[2].link)">
                 <div class="font_box">
-                    <div class="title1">寬欣心理治療所</div>
-                    <div class="title2">臺南市北區育德一街227號</div>
+                    <div class="title1" v-text="resource.phone[2].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('https://sites.google.com/site/lihuifangxinlizhiliaosuo/')">
+            <div class="content" @click="openLink(resource.phone[3].link)">
                 <div class="font_box">
-                    <div class="title1">李慧芳心理治療所</div>
-                    <div class="title2">臺南市東區崇德十七街124號1樓</div>
+                    <div class="title1" v-text="resource.phone[3].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('https://www.eosgrace.com/')">
+            <div class="content" @click="openLink(resource.phone[4].link)">
                 <div class="font_box">
-                    <div class="title1">曙光角落心理諮商診所</div>
-                    <div class="title2">臺南市東區龍山里崇明路155巷4號1-2樓</div>
-                </div>
-                <div class="button">
-                    <img src="@/assets/anson/0610/right_button.svg"></img>
-                </div>
-            </div>
-            <div class="divide_bar"/>
-            <div class="content" @click="openLink('https://hoh062160959.business.site/')">
-                <div class="font_box">
-                    <div class="title1">心家心理治療所</div>
-                    <div class="title2">臺南市東區大同里府連路190號2樓</div>
+                    <div class="title1" v-text="resource.phone[4].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
@@ -74,30 +59,45 @@
             <div class="divide_bar"/>
         </div>
         <div v-else>
-            <div class="content" @click="openLink('https://service.hosp.ncku.edu.tw/Tandem/QueryDocUI.aspx?Lang=&skv=ax2i0%2Bu9%2BGxTJrZ%2FxXvwTC6pcPNyBkqbhRpjTKPQX6NaE%2BMYgMRvug%3D%3D')">
+            <div class="content" @click="openLink(resource.website[0].link)">
                 <div class="font_box">
-                    <div class="title1">成大醫院 - 精神科門診</div>
-                    <div class="title2">臺南市北區勝利路138號</div>
+                    <div class="title1" v-text="resource.website[0].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('https://www.tmh.org.tw/TMH2016/RegCal.aspx?Dept=BB&Kind=2')">
+            <div class="content" @click="openLink(resource.website[1].link)">
                 <div class="font_box">
-                    <div class="title1">台南市立醫院 - 身心科</div>
-                    <div class="title2">臺南市東區崇德路670號</div>
+                    <div class="title1" v-text="resource.website[1].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
                 </div>
             </div>
             <div class="divide_bar"/>
-            <div class="content" @click="openLink('http://www.chimei.org.tw/')">
+            <div class="content" @click="openLink(resource.website[2].link)">
                 <div class="font_box">
-                    <div class="title1">奇美醫院 - 精神科門診</div>
-                    <div class="title2">臺南市永康區中華路901號</div>
+                    <div class="title1" v-text="resource.website[2].name"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="openLink(resource.website[3].link)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource.website[3].name"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="openLink(resource.website[4].link)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource.website[4].name"></div>
                 </div>
                 <div class="button">
                     <img src="@/assets/anson/0610/right_button.svg"></img>
@@ -173,7 +173,7 @@
 }
 .content{
     width: 100vw;
-    height: 10.48vh;
+    height: 8.14vh;
     background: #FFFFFF;
     cursor: pointer;
     position: relative;
@@ -182,7 +182,7 @@
     align-items: center;
 }
 .font_box{
-    width: 36.13vh;
+    width: 78vw;
     padding: 0 0 0 2.96vh;
 }
 .button{
@@ -195,6 +195,8 @@
     font-weight: normal;
     font-size: 2.22vh;
     color: #5C5C5C;
+
+    content: 'shit';
 }
 .title2{
     font-family: Taipei Sans TC Beta;
@@ -209,13 +211,59 @@
 import Nav from '@/components/Nav.vue'
 
 export default {
-    name: 'Relax',
+    name: 'Support',
     components: {
         Nav
     },
     data() {
         return {
             ShowLeft: true,
+            resource: {
+                phone: [
+                    {
+                        name: '台南市生命線協會 1995',
+                        link: 'http://1995tainan.ho.net.tw/'
+                    },
+                    {
+                        name: '張老師電話輔導 1980',
+                        link: 'http://www.1980.org.tw/web3-20101110/about_us08.html'
+                    },
+                    {
+                        name: '衛福部 - 安心專線 1925',
+                        link: 'https://dep.mohw.gov.tw/domhaoh/cp-4906-54077-107.html'
+                    },
+                    {
+                        name: '家庭教育諮詢專線 (02) 412-8185',
+                        link: 'https://web.tainan.gov.tw/family/cp.aspx?n=17225'
+                    },
+                    {
+                        name: '男性關懷專線 0800-013-999',
+                        link: 'https://ifi.immigration.gov.tw/wSite/fp?xItem=9415&ctNode=37279&mp=1'
+                    },
+                ],
+                website: [
+                    {
+                        name: '董氏基金會',
+                        link: 'https://www.jtf.org.tw/'
+                    },
+                    {
+                        name: '全國自殺防治中心',
+                        link: 'https://www.tsos.org.tw/web/home'
+                    },
+                    {
+                        name: '台南市憂鬱關懷協會',
+                        link: 'http://www.changerblue.org.tw/ap/index.aspx'
+                    },
+                    {
+                        name: '心快活',
+                        link: 'https://wellbeing.mohw.gov.tw/nor/main'
+                    },
+                    {
+                        name: '珍愛生命數位學習網',
+                        link: 'https://www.tsos.org.tw/p/elearning'
+                    },
+                ]
+            }
         };
     },
     methods: {

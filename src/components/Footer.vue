@@ -32,7 +32,7 @@
                 </b-col>
                 <b-col class="text-center">
                     <!--暫時link到空頁面-->
-                    <router-link to="/Otherresource">
+                    <router-link to="/Others">
                         <img  v-if="showResouce" class="iconimg" src="@/assets/svg/resouceA.svg">
                         <img  v-else class="iconimg" src="@/assets/svg/resouce.svg">
                         <div v-if="showResouce" class="icontext iconActivetext">其他資源</div>
