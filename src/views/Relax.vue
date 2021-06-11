@@ -84,7 +84,7 @@
     align-items: center;
 }
 .font_box{
-    width: 36.13vh;
+    width: 80vw;
     padding: 0 0 0 2.96vh;
 }
 .button{

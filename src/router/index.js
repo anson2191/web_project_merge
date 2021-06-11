@@ -29,6 +29,8 @@ import Others from '@/views/Others.vue'
 import Relax from '@/views/Relax.vue'
 import Medical from '@/views/Medical.vue'
 import Support from '@/views/Support.vue'
+import Article from '@/views/Article.vue'
+import Content from '@/views/Content.vue'
 
 Vue.use(Router)
 
@@ -145,5 +147,15 @@ export default new Router({
       name: 'Support',
       component: Support
     },
+    {
+      path: '/Others/Article',
+      name: 'Article',
+      component: Article
+    },
+    {
+      path: '/Others/Article/Content',
+      name: 'Content',
+      component: Content
+    }
   ]
 })
