@@ -72,6 +72,26 @@
                 </div>
             </div>
             <div class="divide_bar"/>
+            <div class="content" @click="openLink('https://www.smilinghealthy.com.tw/')">
+                <div class="font_box">
+                    <div class="title1">微笑永康心理諮商所</div>
+                    <div class="title2">臺南市永康區東橋里東橋五路77號2樓 </div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="openLink('http://www.holdingself.com.tw/')">
+                <div class="font_box">
+                    <div class="title1">禾心心理諮商所</div>
+                    <div class="title2">臺南市北區中華北路二段80巷65號</div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
         </div>
         <div v-else>
             <div class="content" @click="openLink('https://service.hosp.ncku.edu.tw/Tandem/QueryDocUI.aspx?Lang=&skv=ax2i0%2Bu9%2BGxTJrZ%2FxXvwTC6pcPNyBkqbhRpjTKPQX6NaE%2BMYgMRvug%3D%3D')">
@@ -104,6 +124,26 @@
                 </div>
             </div>
             <div class="divide_bar"/>
+            <div class="content" @click="openLink('http://www.sinlau.org.tw/')">
+                <div class="font_box">
+                    <div class="title1">基督長老新會新樓醫院 - 身心內科</div>
+                    <div class="title2">臺南市東區東門路一段57號</div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="openLink('https://www.tnhosp.mohw.gov.tw/page.asp?orcaid=%7B05BEB2F9-947A-4E4A-85F0-AE83DF070257%7D')">
+                <div class="font_box">
+                    <div class="title1">衛福部 台南醫院 - 一般精神科</div>
+                    <div class="title2">臺南市中西區中山路125號</div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
         </div>
     </div>
 </template>
@@ -112,6 +152,7 @@
 #layout{
     height: 100vh;
 	background: linear-gradient(180deg, #FFFFFF 42.2%, #9FFBC1 203.98%, #40E9D2 270.1%);
+    overflow-x: hidden;
 }
 #navbar{
     width: 100%;
