@@ -31,6 +31,7 @@ import Medical from '@/views/Medical.vue'
 import Support from '@/views/Support.vue'
 import Article from '@/views/Article.vue'
 import Content from '@/views/Content.vue'
+import State from '@/views/State.vue'
 
 Vue.use(Router)
 
@@ -156,6 +157,11 @@ export default new Router({
       path: '/Others/Article/Content',
       name: 'Content',
       component: Content
+    },
+    {
+      path: '/State',
+      name: 'State',
+      component: State
     }
   ]
 })
