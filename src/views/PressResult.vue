@@ -5,7 +5,7 @@
             <div id="region">
                 <div id="range_bar"></div>
                 <div id="face"></div>
-                <div id="content"></div>
+                <div id="content_PressResult"></div>
             </div>
 
             <div>
@@ -87,7 +87,7 @@
     position: relative;
     top: 5.67vh;
 }
-#content{
+#content_PressResult{
     width: 33.91vh;
     height: 16.28vh;
     font-family: Taipei Sans TC Beta;
@@ -225,22 +225,22 @@ export default {
 
         if(this.Pressure < 6){
             document.getElementById('range_bar').innerHTML = this.result[0].range;
-            document.getElementById('content').innerHTML = this.result[0].comment;
+            document.getElementById('content_PressResult').innerHTML = this.result[0].comment;
             document.getElementById('face').style.backgroundImage = "url(" + require('@/assets/anson/p0.svg') + ")";
         }
         else if(this.Pressure < 10){
             document.getElementById('range_bar').innerHTML = this.result[1].range;
-            document.getElementById('content').innerHTML = this.result[1].comment;
+            document.getElementById('content_PressResult').innerHTML = this.result[1].comment;
             document.getElementById('face').style.backgroundImage = "url(" + require('@/assets/anson/p1.svg') + ")";
         }
         else if(this.Pressure < 15){
             document.getElementById('range_bar').innerHTML = this.result[2].range;
-            document.getElementById('content').innerHTML = this.result[2].comment;
+            document.getElementById('content_PressResult').innerHTML = this.result[2].comment;
             document.getElementById('face').style.backgroundImage = "url(" + require('@/assets/anson/p2.svg') + ")";
         }
         else {
             document.getElementById('range_bar').innerHTML = this.result[3].range;
-            document.getElementById('content').innerHTML = this.result[3].comment;
+            document.getElementById('content_PressResult').innerHTML = this.result[3].comment;
             document.getElementById('face').style.backgroundImage = "url(" + require('@/assets/anson/p3.svg') + ")";
         }
     }

@@ -1,6 +1,7 @@
 <template>
     <div>
         <Nav showBackArrow=true showText=true navText="讀讀文章"></Nav>
+        
         <div id="layout">
             <div v-if="content==0">
                 <div class="title" v-text="main[0].title"></div>
@@ -127,6 +128,7 @@
             </div>
             <br>
         </div>
+
         <Footer showResouce=true />
     </div>
 </template>
@@ -135,7 +137,7 @@
 #layout{
     width: 100vw;
     padding: 2.96vh;
-
+    text-align: left;
 }
 .title{
     font: Taipei Sans TC Beta;

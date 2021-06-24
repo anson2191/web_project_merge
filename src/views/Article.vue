@@ -1,64 +1,68 @@
 <template>
-    <div id="layout">
+    <div>
         <Nav showBackArrow=true showText=true navText="讀讀文章"></Nav>
-        <div class="divide_bar"/>
-        <div class="content" @click="toContent(0)">
-            <div class="font_box">
-                <div class="title1" v-text="resource[0].name"></div>
-                <div class="title2" v-text="resource[0].detail"></div>
+
+        <div id="layout">
+            <div class="divide_bar"/>
+            <div class="content" @click="toContent(0)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource[0].name"></div>
+                    <div class="title2" v-text="resource[0].detail"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
             </div>
-            <div class="button">
-                <img src="@/assets/anson/0610/right_button.svg"></img>
+            <div class="divide_bar"/>
+            <div class="content" @click="toContent(1)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource[1].name"></div>
+                    <div class="title2" v-text="resource[1].detail"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
             </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="toContent(2)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource[2].name"></div>
+                    <div class="title2" v-text="resource[2].detail"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="toContent(3)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource[3].name"></div>
+                    <div class="title2" v-text="resource[3].detail"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
+            <div class="content" @click="toContent(4)">
+                <div class="font_box">
+                    <div class="title1" v-text="resource[4].name"></div>
+                    <div class="title2" v-text="resource[4].detail"></div>
+                </div>
+                <div class="button">
+                    <img src="@/assets/anson/0610/right_button.svg"></img>
+                </div>
+            </div>
+            <div class="divide_bar"/>
         </div>
-        <div class="divide_bar"/>
-        <div class="content" @click="toContent(1)">
-            <div class="font_box">
-                <div class="title1" v-text="resource[1].name"></div>
-                <div class="title2" v-text="resource[1].detail"></div>
-            </div>
-            <div class="button">
-                <img src="@/assets/anson/0610/right_button.svg"></img>
-            </div>
-        </div>
-        <div class="divide_bar"/>
-        <div class="content" @click="toContent(2)">
-            <div class="font_box">
-                <div class="title1" v-text="resource[2].name"></div>
-                <div class="title2" v-text="resource[2].detail"></div>
-            </div>
-            <div class="button">
-                <img src="@/assets/anson/0610/right_button.svg"></img>
-            </div>
-        </div>
-        <div class="divide_bar"/>
-        <div class="content" @click="toContent(3)">
-            <div class="font_box">
-                <div class="title1" v-text="resource[3].name"></div>
-                <div class="title2" v-text="resource[3].detail"></div>
-            </div>
-            <div class="button">
-                <img src="@/assets/anson/0610/right_button.svg"></img>
-            </div>
-        </div>
-        <div class="divide_bar"/>
-        <div class="content" @click="toContent(4)">
-            <div class="font_box">
-                <div class="title1" v-text="resource[4].name"></div>
-                <div class="title2" v-text="resource[4].detail"></div>
-            </div>
-            <div class="button">
-                <img src="@/assets/anson/0610/right_button.svg"></img>
-            </div>
-        </div>
-        <div class="divide_bar"/>
     </div>
 </template>
 
 <style scoped rel="stylesheet" type="text/css">
 #layout{
-    height: 100vh;
+    height: 92.5vh;
 	background: linear-gradient(180deg, #FFFFFF 42.2%, #9FFBC1 203.98%, #40E9D2 270.1%);
+    text-align: left;
 }
 #navbar{
     width: 100%;
@@ -131,10 +135,12 @@
 .font_box{
     width: 80vw;
     padding: 0 0 0 2.96vh;
+    text-align: left;
 }
 .button{
     position: relative;
     left: 2.96vh;
+    width: 10vw;
 }
 .title1{
     font-family: Taipei Sans TC Beta;

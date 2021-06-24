@@ -6,7 +6,7 @@
 				<p1>1. 這次主要想和心理師談什麼呢？</p1>
 			</div>
 			
-			<div class="button_list" style="height: 30vh">
+			<div class="button_list" style="width:41.77vh; height: 39.77vh">
 			
 				<div class="medium_button">
 					<div id="b1" @click="press1('b1')" class="button_content">
@@ -73,7 +73,7 @@
 				<p1>2. 有特別想選男/女性心理師嗎？</p1>
 			</div>
 			
-			<div class="button_list" style="height: 7vh">
+			<div class="button_list" style="width:41.77vh; height: 7vh">
 			
 					<div class="short_button">
 						<div id="b11" @click="press11('b11')" class="button_content">
@@ -98,7 +98,7 @@
 				<p1>3. 比較喜歡以下哪種諮商風格呢？</p1>
 			</div>
 				
-			<div class="button_list" style="height: 20vh">
+			<div class="button_list" style="width: 41.77vh; height:24vh">
 			
 					<div class="long_button">
 						<div id="b14" @click="press14('b14')" class="button_content">
@@ -404,13 +404,15 @@ blockquote{
 }
 
 #layout_down{
-
+	display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 4vh;
 }
 
 .short_button{
-	width: 9.63vh;
-	height: 5vh;
+	width: 11.85vh;
+	height: 6.22vh;
 	
 	background-image: -webkit-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
     background-image: -moz-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
@@ -424,8 +426,8 @@ blockquote{
 }
 
 .medium_button{
-	width: 14.8vh;
-	height: 5vh;
+	width: 18.22vh;
+	height: 6.22vh;
 	
 	background-image: -webkit-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
     background-image: -moz-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
@@ -455,8 +457,8 @@ blockquote{
 }
 
 .long_button{
-	width: 34.3vh;
-	height: 5vh;
+	width: 42.22vh;
+	height: 6.22vh;
 	
 	background-image: -webkit-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
     background-image: -moz-linear-gradient(top, #96FBC4 33.15%, #20E2D7 127.81%);
@@ -481,7 +483,7 @@ p1{
 p2{
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.85vh;
+	font-size: 2.22vh;
 
 	line-height: 2.46vh;
 }
@@ -519,5 +521,7 @@ p2{
 
 .content_box{
 	padding: 3vh 0 1vh 0;
+	width: 80vw;
+    text-align: left;
 }
 </style>

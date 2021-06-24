@@ -50,7 +50,7 @@
     font-family: 'SF Compact Display';
     font-style: normal;
     font-weight: 600;
-    font-size: 2.22vh;
+    font-size: 2.67vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,8 +63,8 @@
     position: relative;
     top: 1.5vh;
     left: 6.41vh;
-    width: 35.88vh;
-    height: 13.93vh;
+    width: 43.11vh;
+    height: 16.74vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,19 +72,25 @@
     border: 0.123vh solid #20E2D7;
     box-sizing: border-box;
     border-radius: 1.23vh;
+
+    font-family: Taipei Sans TC Beta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.67vh;
+    color: #4F4F4F;
 }
 #button_list{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    height: 46.36vh;
+    height: 50.36vh;
     position: relative;
     top: 3.5vh;
 }
 .button{
-    width: 25.89vh;
-    height: 6.78vh;
+    width: 31.11vh;
+    height: 8.15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +98,7 @@
     font-family: Taipei Sans TC Beta;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.22vh;
+    font-size: 2.67vh;
 }
 .isPress{
     background: #20E2D7;
@@ -114,11 +120,11 @@
     position: relative;
     top: 8vh;
     color: #FFFFFF;
-    font-size: 2.22vh;
+    font-size: 2.67vh;
 }
 .page_button{
-    width: 18.87vh;
-    height: 7.03vh;
+    width: 22.67vh;
+    height: 8.44vh;
     box-shadow: 0vh 0.49vh 2.1vh -0.123vh rgba(107, 182, 177, 0.51);;
     border-radius: 4.07vh;
     background: #20E2D7;
