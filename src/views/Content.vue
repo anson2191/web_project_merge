@@ -2,7 +2,7 @@
     <div>
         <Nav showBackArrow=true showText=true navText="讀讀文章"></Nav>
         
-        <div id="layout">
+        <div id="layout_Content">
             <div v-if="content==0">
                 <div class="title" v-text="main[0].title"></div>
                 <div class="author" v-text="main[0].author"></div>
@@ -134,7 +134,7 @@
 </template>
 
 <style scoped rel="stylesheet" type="text/css">
-#layout{
+#layout_Content{
     width: 100vw;
     padding: 2.96vh;
     text-align: left;
